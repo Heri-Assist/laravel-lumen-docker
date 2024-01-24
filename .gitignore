@@ -2,6 +2,11 @@
 /api/vendor
 /front-continental/node_modules
 
+/api/.idea
+/api/Homestead.json
+/api/Homestead.yaml
+/api/.phpunit.result.cache
+
 # dependencies
 
 /front-continental/.pnp
