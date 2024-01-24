@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js Desarrollo</code> and save to reload.
+          Entorno <code>  de Desarrollo React </code> y Laravel/Lumen
         </p>
         <a
           className="App-link"
