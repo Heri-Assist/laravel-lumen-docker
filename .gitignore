@@ -1,0 +1,25 @@
+/data
+/api/vendor
+/front-continental/node_modules
+
+# dependencies
+
+/front-continental/.pnp
+/front-continental/.pnp.js
+
+# testing
+/front-continental/coverage
+
+# production
+/front-continental/build
+
+# misc
+/front-continental/.DS_Store
+/front-continental/.env.local
+/front-continental/.env.development.local
+/front-continental/.env.test.local
+/front-continental/.env.production.local
+
+/front-continental/npm-debug.log*
+/front-continental/yarn-debug.log*
+/front-continental/yarn-error.log*

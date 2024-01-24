@@ -1,0 +1,10 @@
+Instruciones para ejecutar el proyecto LARAVEL/LUMEN POSTGRESQL Y REACT 18.2
+============================================================================
+
+
+1. Para que funcion la instalción del proyecto se debe tener instalado en el equipo lo siguiente:
+
+		-Docker y Docker-compose (https://docs.docker.com/install/)
+2. Una vez instalado docker y docker-compose, se debe clonar el repositorio del proyecto en la carpeta que se desee, para esto se debe ejecutar el siguiente comando en la terminal:
+
+		-git clone 
