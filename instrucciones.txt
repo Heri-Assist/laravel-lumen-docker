@@ -15,7 +15,7 @@ Instruciones para ejecutar el proyecto LARAVEL/LUMEN POSTGRESQL
 		- sudo docker-compose  up -d
 4 Instalar las dependencias del proyecto, para esto se debe ingresar al contenedor de php y ejecutar el siguiente comando:
 
-		- sudo docker exec -it php bash
+		- sudo docker exec -it laravel-lumen-docker-api-1 bash
 		- composer install --no-ansi --no-dev --no-interaction --no-progress --optimize-autoloader --no-scripts
 
 5. Inicar los servidores: 
