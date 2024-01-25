@@ -30,7 +30,7 @@ Instruciones para ejecutar el proyecto LARAVEL/LUMEN POSTGRESQL
 
 7. Para ingresar a la base de datos se debe ingresar a PhpPGadmin con las siguientes credenciales:
 
-
+		- Host: laravel-lumen-docker-db-1
 		- Database: apisLumen
 		- User: apisLumen
 		- Password: SECRET-PASS
