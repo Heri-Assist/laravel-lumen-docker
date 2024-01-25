@@ -1,4 +1,4 @@
-# Imagen base para PHP 8.0 con composer
+# Imagen base para PHP 8.3 con composer
 FROM php:8.3-apache
 RUN echo 'memory_limit = 512M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
 
@@ -29,13 +29,13 @@ ENV PATH $PATH:/composer/vendor/bin
 # Directorio de trabajo
 RUN a2enmod rewrite
 WORKDIR /var/www/
+
 COPY ./ /var/www/
+RUN composer install --no-dev --optimize-autoloader
 RUN rm -rf /var/www/html \ 
     && mv /var/www/public /var/www/html \     
     && chmod -R 0777 /var/www/storage/
 
-# Instalar dependencias de Lumen
-RUN composer install --no-dev --optimize-autoloader
 
 
 # Limpiar paquetes y cachés después de la instalación

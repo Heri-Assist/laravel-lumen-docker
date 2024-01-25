@@ -18,20 +18,10 @@ services:
       - 8200:80
     depends_on:
       - db
-  front-continental:
-    image: node:20-alpine
-    working_dir: /app
-    command: "npm run start"
-    volumes:
-      - ./front-continental:/app
-    ports:
-      - 3000:3000
-    depends_on:
-      -  db
   phppgadmin:
     image: dpage/pgadmin4
     environment:
-      - PGADMIN_DEFAULT_EMAIL=admin@emial.com
+      - PGADMIN_DEFAULT_EMAIL=admin@email.com
       - PGADMIN_DEFAULT_PASSWORD=admin
       - PGADMIN_LISTEN_PORT=5050
     ports:

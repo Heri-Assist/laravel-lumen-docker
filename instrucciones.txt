@@ -1,10 +1,36 @@
-Instruciones para ejecutar el proyecto LARAVEL/LUMEN POSTGRESQL Y REACT 18.2
+Instruciones para ejecutar el proyecto LARAVEL/LUMEN POSTGRESQL 
 ============================================================================
 
 
 1. Para que funcion la instalción del proyecto se debe tener instalado en el equipo lo siguiente:
 
 		-Docker y Docker-compose (https://docs.docker.com/install/)
-2. Una vez instalado docker y docker-compose, se debe clonar el repositorio del proyecto en la carpeta que se desee, para esto se debe ejecutar el siguiente comando en la terminal:
+2.  Una vez instalado docker y docker-compose, se debe clonar el repositorio del proyecto en la carpeta que se desee, para esto se debe ejecutar el siguiente comando en la terminal:
 
-		-git clone 
+		- git clone https://github.com/Heri-Assist/laravel-lumen-docker.git 
+
+3.  Una vez clonado el repositorio, se debe ingresar a la carpeta del proyecto y ejecutar el siguiente comando para levantar los contenedores de docker:
+
+		- sudo docker-compose  build 
+		- sudo docker-compose  up -d
+4 Instalar las dependencias del proyecto, para esto se debe ingresar al contenedor de php y ejecutar el siguiente comando:
+
+		- sudo docker exec -it php bash
+		- composer install --no-ansi --no-dev --no-interaction --no-progress --optimize-autoloader --no-scripts
+
+5. Inicar los servidores: 
+
+		- Laravel/lumen esta en el puerto 8200 http://localhost:8200
+		- PhpPGadmin esta en el puerto 5050 http://localhost:5050
+
+6. Para ingresar  ingresar a PhpPGadmin con las siguientes credenciales:
+
+		- Email: admin@email.com  
+		- password: admin
+
+7. Para ingresar a la base de datos se debe ingresar a PhpPGadmin con las siguientes credenciales:
+
+
+		- Database: apisLumen
+		- User: apisLumen
+		- Password: SECRET-PASS
